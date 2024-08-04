@@ -1,0 +1,22 @@
+.button {
+  @apply flex items-center justify-center px-6 py-2 border-2 w-full sm:w-max;
+  @apply disabled:pointer-events-none;
+}
+
+.primary {
+  @apply rounded-full text-black font-medium border-primary bg-primary;
+  @apply active:bg-primary-dark-2 active:border-primary-dark-2;
+  @apply disabled:bg-primary-light-2 disabled:text-gray disabled:border-primary-light-2;
+}
+
+.secondary {
+  @apply rounded-full text-black font-medium border-primary-dark-2 bg-white;
+  @apply active:border-primary-dark-1 active:bg-primary-light-1;
+  @apply disabled:border-gray disabled:text-gray;
+}
+
+.cta {
+  @apply rounded-full text-white border-secondary-dark-2 bg-secondary-dark-2 font-semibold;
+  @apply active:border-secondary-dark-1 active:bg-secondary-dark-1;
+  @apply disabled:bg-secondary-light-2 disabled:border-secondary-light-2 disabled:text-gray;
+}
